@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+// update github
+import Update from "./update";
 // CSS
 import "./index.css";
 // JS
@@ -15,6 +17,7 @@ function BookList() {
       {books.map((book) => {
         return <Book key={book.id} {...book}></Book>;
       })}
+      <Update />
     </section>
   );
 }
